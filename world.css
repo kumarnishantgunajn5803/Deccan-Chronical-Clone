@@ -4,7 +4,7 @@ body{
     margin: auto;
     margin-top: 100px;
     height: auto;
-    border: solid 2px yellow;
+    /* border: solid 2px yellow; */
 }
 #icon{
     display: flex;
@@ -28,7 +28,7 @@ body{
     margin: auto;
     /* width: 90%; */
     /* height: 900px; */
-    border: solid 1px red;
+    /* border: solid 1px red; */
    display: flex;
 }
 
@@ -36,7 +36,7 @@ body{
     display: grid;
     margin: auto;
     margin-top: 1px;
-    border: solid 1px green;
+    /* border: solid 1px green; */
     /* height: 1200px; */
     /* width: 30%; */
 }
