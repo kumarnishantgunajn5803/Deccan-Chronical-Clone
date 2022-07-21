@@ -414,7 +414,8 @@
   height: 200px;
   width: 100%;
   background-color: #f2f2f2;
-  border: 1px solid red;
+  /* border: 1px solid red; */
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
 #search-btn {
@@ -459,38 +460,33 @@
 }
 
 .thikline {
-    border-left: 1px solid lightgray;
-    height: 20px;
-    /* margin-left: -40px; */
+  border-left: 1px solid lightgray;
+  height: 20px;
+  /* margin-left: -40px; */
 }
 
-#foot2{
-    width: 7%;
-    margin: auto;
-    margin-top: 5px;
+#foot2 {
+  width: 7%;
+  margin: auto;
+  margin-top: 5px;
 }
 
 #foot2 > ul > a {
-    font-size: 13px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    color: gray;
-  }
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: gray;
+}
 
-  #copy-right{
-      width: 80%;
-      margin: auto;
-      margin-top: 10px;
-  }
+#copy-right {
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+}
 
-
-
-  #copy-right > p{
-    font-family: "Montserrat", sans-serif;
-    font-size: 17px;
-    font-weight: 101;
-    margin-bottom: 3px;
-
-  }
-
-
+#copy-right > p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  font-weight: 101;
+  margin-bottom: 3px;
+}
