@@ -4,8 +4,8 @@
 // f21120aafe774c5c87c75812e7983fbd
 
 let worldNews = async() =>{
-
-    let url = `https://newsapi.org/v2/everything?q=world&from=2022-06-19&sortBy=publishedAt&apiKey=08e88dc30f0641c1bb12c5c0de28f60c` ;
+    let url = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=f21120aafe774c5c87c75812e7983fbd`
+    // let url = `https://newsapi.org/v2/everything?q=world&from=2022-06-22&sortBy=publishedAt&apiKey=08e88dc30f0641c1bb12c5c0de28f60c` ;
     let res = await fetch(url)
     let data = await res.json();
     console.log(data);
@@ -19,7 +19,7 @@ let append = (data)=>{
     let container = document.getElementById("worldfirst")
    
     // data.forEach((el) => {
-        for(let i=11; i<data.length-87; i++){
+        for(let i=0; i<data.length-18; i++){
             let image = document.createElement("img")
             image.src = data[i].urlToImage;
 
@@ -47,9 +47,12 @@ let append = (data)=>{
     let container1 = document.getElementById("worldsecond")
    
     // data.forEach((el) => {
-        for(let i=15; i<data.length-75; i++){
+        for(let i=5; i<data.length-5; i++){
             let image = document.createElement("img")
             image.src = data[i].urlToImage;
+
+            let div1 = document.createElement("div")
+            div1.append(image)
 
             let title = document.createElement("p")
             title.innerText = data[i].title
@@ -60,7 +63,7 @@ let append = (data)=>{
             let div = document.createElement("div")
             div.setAttribute("class", "worldsecondnews")
             
-            div.append(image,title)
+            div.append(div1,title)
             div.addEventListener("click",()=>{
                 let arr = [];
                 arr.push(data[i]);
@@ -75,7 +78,7 @@ let append = (data)=>{
 
 let mostPopularNews = async() =>{
 
-    let url = `https://newsapi.org/v2/everything?q=top&from=2022-06-19&sortBy=publishedAt&apiKey=08e88dc30f0641c1bb12c5c0de28f60c` ;
+    let url = `https://newsapi.org/v2/everything?q=top&from=2022-06-22&sortBy=publishedAt&apiKey=08e88dc30f0641c1bb12c5c0de28f60c` ;
     let res = await fetch(url)
     let data = await res.json();
     console.log(data);
@@ -93,6 +96,9 @@ let append1 = (data)=>{
             let image = document.createElement("img")
             image.src = data[i].urlToImage;
 
+            let div1 = document.createElement("div")
+             div1.append(image)
+             
             let title = document.createElement("h2")
             title.innerText = data[i].title
 
@@ -102,7 +108,7 @@ let append1 = (data)=>{
             let div = document.createElement("div")
             div.setAttribute("class", "mostpopularnews")
             
-            div.append(title,image)
+            div.append(title,div1)
             div.addEventListener("click",()=>{
                 let arr = [];
                 arr.push(data[i]);
