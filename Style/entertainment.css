@@ -1,186 +1,496 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-size: 15px;
-
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 15px;
 }
 
-#top_navbar{
-    display: flex;
-    height: 40px;
-    width: 100%;
-    background-color: black;
-
+#top_navbar {
+  display: flex;
+  height: 40px;
+  width: 100%;
+  background-color: black;
 }
 
-#top_navbar #top_navbar_left{
-    height: auto;
-    width: 50%;
-    display: flex;
-    
-    justify-content: space-evenly;
-    align-items: center;
+#top_navbar #top_navbar_left {
+  height: auto;
+  width: 50%;
+  display: flex;
+
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-
-
-#top_navbar > #top_navbar_left > .hamberger{
-    height: 30px;
-    width: 20px;
-    margin-left: 100px;
+#top_navbar > #top_navbar_left > .hamberger {
+  height: 30px;
+  width: 20px;
+  margin-left: 100px;
 }
 
-
-#top_navbar > #top_navbar_left  > .hamberger div{
-    height: 2px;
-    width: 100%;
-    background-color: #fff;
-    margin-top: 5px;
+#top_navbar > #top_navbar_left > .hamberger div {
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  margin-top: 5px;
 }
 
-#top_navbar > #top_navbar_left  > .hamberger > #hamberger1{
-    margin-top: 6px;
+#top_navbar > #top_navbar_left > .hamberger > #hamberger1 {
+  margin-top: 6px;
 }
 
-
-#top_navbar > #hamberger2{
-    height: 2px;
-    width: 10%;
-    background-color: #fff;
+#top_navbar > #hamberger2 {
+  height: 2px;
+  width: 10%;
+  background-color: #fff;
 }
 
-#top_navbar > #top_navbar_left > ul{
-    color: #fff;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-
+#top_navbar > #top_navbar_left > ul {
+  color: #fff;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
 }
 
-#e_paper{
-    margin-left: -25px;
+#e_paper {
+  margin-left: -25px;
 }
 
-#sunday{
-    margin-left: -50px;
+#sunday {
+  margin-left: -50px;
 }
 
-#top_navbar > #top_navbar_left > .vl{
-    border-left: 1px solid white;
-    height: 20px;
-    margin-left: -40px;
+#top_navbar > #top_navbar_left > .vl {
+  border-left: 1px solid white;
+  height: 20px;
+  margin-left: -40px;
 }
 
-
-#facebook_logo  > a > img{
-    height: 25px;
-    margin-left: -30px;
+#facebook_logo > a > img {
+  height: 25px;
+  margin-left: -30px;
 }
 
-#twiter_logo > a > img{
-    height: 25px;
-    margin-left: -50px;
+#twiter_logo > a > img {
+  height: 25px;
+  margin-left: -50px;
 }
 
-#insta_logo > a > img{
-    height: 25px;
-    margin-left: -80px;
+#insta_logo > a > img {
+  height: 25px;
+  margin-left: -80px;
 }
 
-#deccan_logo > a > img{
-    height: 25px;
-    margin-left: -105px;
+#deccan_logo > a > img {
+  height: 25px;
+  margin-left: -105px;
 }
 
-
-#top_navbar_right{
-    height: auto;
-    width: 50%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+#top_navbar_right {
+  height: auto;
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-#top_navbar_right > label{
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    margin-left: -130px;
-    font-weight: bold;
+#top_navbar_right > label {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  margin-left: -130px;
+  font-weight: bold;
 }
 
-#top_navbar > #top_navbar_right > .vl-1{
-    border-left: 1px solid white;
-    height: 20px;
-    font-family: 'Montserrat', sans-serif;
-    margin-left: -120px;
+#top_navbar > #top_navbar_right > .vl-1 {
+  border-left: 1px solid white;
+  height: 20px;
+  font-family: "Montserrat", sans-serif;
+  margin-left: -120px;
 }
 
-#top_navbar > #top_navbar_right > ul{
-    color: #fff;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-    margin-left: -130px;
+#top_navbar > #top_navbar_right > ul {
+  color: #fff;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  margin-left: -130px;
 }
 
-#page_logo{
-    height: auto;
-    width: 25%;
-    margin: auto;
+#page_logo {
+  height: auto;
+  width: 25%;
+  margin: auto;
 }
 
-#page_logo > a > img{
-    margin-top: 10px;
-    margin-left: 30px;
-    height: 60px;
+#page_logo > a > img {
+  margin-top: 10px;
+  margin-left: 30px;
+  height: 60px;
 }
 
-#page_logo > #data_time > p{
-    text-align: center;
-    margin-top: 5px;
-    font-weight: 600;
-    letter-spacing: .20px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 13px;
+#page_logo > #data_time > p {
+  text-align: center;
+  margin-top: 5px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
 }
 
-#thick_line{
-    margin: auto;
-    width: 80%;
-    border: 1px solid black;
-    margin-top: 15px;
+#thick_line {
+  margin: auto;
+  width: 80%;
+  border: 1px solid black;
+  margin-top: 15px;
 }
 
-#nav_bar_content{
-    margin: auto;
-    display: flex;
-    width: 80%;
-    height: 40px;
-    justify-content: space-evenly;
-    align-items: center;
+#nav_bar_content {
+  margin: auto;
+  display: flex;
+  width: 80%;
+  height: 40px;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-#nav_bar_content > a > img{
-    height: 20px;
+#nav_bar_content > a > img {
+  height: 20px;
 }
 
 /* #nav_bar_content > img :hover{
 
 } */
 
-#nav_bar_content > ul > a{
-    font-size: 18px;
-    color: black;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 100;
+#nav_bar_content > ul > a {
+  font-size: 18px;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
 }
 
-#nav_bar_content > ul > a:hover{
-    background-color: lightgray;
+#nav_bar_content > ul > a:hover {
+  background-color: lightgray;
 }
 
-#thin_line{
-    width: 80%;
+#thin_line {
+  width: 80%;
+  margin: auto;
+  border: 0.001px solid lightgray;
+}
+
+#container > #bollywood-phase {
+  display: flex;
+  width: 80%;
+}
+
+#container > #bollywood-phase > #bollywood-blog {
+  height: auto;
+  width: 500px;
+
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  margin-left: 142px;
+  margin-top: 20px;
+}
+
+#container > #bollywood-phase > #bollywood-blog > h1 {
+  font-size: 35px;
+  text-decoration: underline red;
+  margin-bottom: 30px;
+}
+
+#container > #bollywood-phase > #bollywood-blog > #bollywood-div {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  margin-bottom: 10px;
+}
+
+#container > #bollywood-phase > #bollywood-blog > #bollywood-div > img {
+  height: 300px;
+  width: 500px;
+}
+
+#container
+  > #bollywood-phase
+  > #bollywood-blog
+  > #bollywood-div
+  > .description-para {
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+#container > #bollywood-phase > #bollywood-blog > #bollywood-div > .title-para {
+  color: black;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  letter-spacing: 1px;
+  line-height: 23px;
+  padding-bottom: 30px;
+}
+
+#container > #bollywood-phase > #bollywood-small-blog {
+  width: 60%;
+  margin-top: 89.02px;
+  margin-left: 20px;
+}
+
+#container
+  > #bollywood-phase
+  > #bollywood-small-blog
+  > #bollywood-small-blog-div {
+  display: flex;
+  height: auto;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+#container
+  > #bollywood-phase
+  > #bollywood-small-blog
+  > #bollywood-small-blog-div
+  > img {
+  height: 70px;
+  width: 120px;
+}
+
+#container
+  > #bollywood-phase
+  > #bollywood-small-blog
+  > #bollywood-small-blog-div
+  > .title-para {
+  margin-left: 6px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+}
+
+#hollywood-phase {
+  height: auto;
+  width: 80%;
+  /* border: 1px solid red; */
+  margin: auto;
+  /* margin-bottom: 40px; */
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 1px,
+    rgb(163, 148, 148) 0px 0px 0px 1px; */
+}
+
+#hollywood-phase > #hollywood-blog > h1 {
+  font-size: 35px;
+  text-decoration: underline red;
+  margin-bottom: 30px;
+}
+
+#hollywood-phase > #hollywood-blog > #hollywood-blog1 {
+  margin-top: -50px;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 45px;
+}
+
+#hollywood-phase > #hollywood-blog > #hollywood-blog1 > .hollywood-div {
+  height: auto;
+  width: 350px;
+  /* border: 1px solid blue; */
+  /* padding: 10px */
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+#hollywood-phase > #hollywood-blog > #hollywood-blog1 > .hollywood-div > img {
+  height: 300px;
+  width: 350px;
+}
+
+#hollywood-phase
+  > #hollywood-blog
+  > #hollywood-blog1
+  > .hollywood-div
+  > .title-para {
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#hollywood-phase
+  > #hollywood-blog
+  > #hollywood-blog1
+  > .hollywood-div
+  > .description-para {
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 23px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+#televsion-phase {
+  /* margin-top: 40px; */
+  height: 550px;
+  width: 80%;
+  margin: auto;
+  /* border: 1px solid red; */
+}
+
+#televsion-phase > #televsion-blog > h1 {
+  font-size: 35px;
+  text-decoration: underline red;
+  margin-bottom: 30px;
+}
+
+#television-blog1 {
+  height: auto;
+  width: 30%;
+  display: flex;
+  padding: 45px;
+  margin-top: -50px;
+  gap: 20px;
+}
+
+#television-div > img {
+  height: 200px;
+  width: 350px;
+}
+
+#television-div > p {
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+#television-small-blog {
+  display: flex;
+}
+
+#television-small-blog-div {
+  height: auto;
+  width: 30%;
+  display: flex;
+  padding: 40px;
+  margin-top: -50px;
+}
+
+#television-small-blog > #television-small-blog-div > img {
+  height: 60px;
+  margin-right: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#television-small-blog > #television-small-blog-div > p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: grey;
+}
+
+.under-line1 {
+  margin-bottom: 3px;
+}
+
+.under-line1 > hr {
+  width: 80%;
+  border: 0.1px solid lightgray;
+  margin: auto;
+}
+
+.under-line2 > hr {
+  width: 80%;
+  border: 1px solid gray;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+#footer {
+  height: 200px;
+  width: 100%;
+  background-color: #f2f2f2;
+  border: 1px solid red;
+}
+
+#search-btn {
+  /* margin-top: ; */
+  padding-top: 20px;
+  width: 40%;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+
+#search-btn > input {
+  width: 85%;
+  height: 30px;
+  border: 0.1px solid #00ffff;
+  background-color: #fff;
+}
+
+#search-btn > button {
+  width: 12%;
+  height: 30px;
+}
+
+::placeholder {
+  font-size: 13px;
+  padding: 5px;
+}
+
+#foot {
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+}
+
+#foot > ul > a {
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: gray;
+}
+
+.thikline {
+    border-left: 1px solid lightgray;
+    height: 20px;
+    /* margin-left: -40px; */
+}
+
+#foot2{
+    width: 7%;
     margin: auto;
-    border: 0.001px solid lightgray;
+    margin-top: 5px;
 }
+
+#foot2 > ul > a {
+    font-size: 13px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    color: gray;
+  }
+
+  #copy-right{
+      width: 80%;
+      margin: auto;
+      margin-top: 10px;
+  }
+
+
+
+  #copy-right > p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    font-weight: 101;
+    margin-bottom: 3px;
+
+  }
+
+
