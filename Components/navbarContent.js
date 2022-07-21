@@ -77,7 +77,7 @@ let navbarContent = () => {
           <a href="">World</a>
         </ul>
         <ul>
-          <a href="">Entertainment</a>
+          <a href="" id = "entertainment">Entertainment</a>
         </ul>
         <ul>
           <a href="">Job & Education</a>
