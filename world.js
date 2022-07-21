@@ -1,10 +1,11 @@
 
 // `https://newsapi.org/v2/everything?q=tesla&from=2022-06-19&sortBy=publishedAt&apiKey=08e88dc30f0641c1bb12c5c0de28f60c` 
 
+// f21120aafe774c5c87c75812e7983fbd
 
 let worldNews = async() =>{
 
-    let url = `https://newsapi.org/v2/everything?q=world&from=2022-06-22&sortBy=publishedAt&apiKey=08e88dc30f0641c1bb12c5c0de28f60c` ;
+    let url = `https://newsapi.org/v2/everything?q=world&from=2022-06-19&sortBy=publishedAt&apiKey=08e88dc30f0641c1bb12c5c0de28f60c` ;
     let res = await fetch(url)
     let data = await res.json();
     console.log(data);
@@ -74,7 +75,7 @@ let append = (data)=>{
 
 let mostPopularNews = async() =>{
 
-    let url = `https://newsapi.org/v2/everything?q=top&from=2022-06-22&sortBy=publishedAt&apiKey=08e88dc30f0641c1bb12c5c0de28f60c` ;
+    let url = `https://newsapi.org/v2/everything?q=top&from=2022-06-19&sortBy=publishedAt&apiKey=08e88dc30f0641c1bb12c5c0de28f60c` ;
     let res = await fetch(url)
     let data = await res.json();
     console.log(data);
