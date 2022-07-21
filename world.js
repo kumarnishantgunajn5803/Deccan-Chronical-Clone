@@ -113,3 +113,173 @@ let append1 = (data)=>{
         }
    
 }
+
+//////////// Gallery News /////////////
+
+let galleryNews = async() =>{
+
+    let url = `https://newsapi.org/v2/everything?q=gallery&from=2022-06-22&sortBy=publishedAt&apiKey=08e88dc30f0641c1bb12c5c0de28f60c` ;
+    let res = await fetch(url)
+    let data = await res.json();
+    console.log(data);
+    append2(data.articles)
+}
+
+galleryNews()
+
+let append2 = (data)=>{
+
+    let container = document.getElementById("galleryfirst")
+   
+    // data.forEach((el) => {
+        for(let i=0; i<data.length-96; i++){
+            let image = document.createElement("img")
+            image.src = data[i].urlToImage;
+
+            
+            let div1 = document.createElement("div")
+            div1.append(image)
+
+            let title = document.createElement("p")
+            title.innerText = data[i].title
+
+            // let p = document.createElement("p")
+            // p.innerText = data[i].description
+
+            let div = document.createElement("div")
+            div.setAttribute("class", "galleryfirstnews")
+            
+            div.append(div1,title)
+            div.addEventListener("click",()=>{
+                let arr = [];
+                arr.push(data[i]);
+                localStorage.setItem("news",JSON.stringify(arr));
+                window.location.href="news.html";
+            })
+            container.append(div);
+        }
+        let cont = document.getElementById("gallerysecond")
+    
+        let image = document.createElement("img")
+        image.src = data[6].urlToImage
+    
+        cont.append(image);     
+}
+
+/////////// Neighbours News ////////////////
+
+let neighboursNews = async() =>{
+
+    let url = `https://newsapi.org/v2/everything?q=neighbour&from=2022-06-22&sortBy=publishedAt&apiKey=08e88dc30f0641c1bb12c5c0de28f60c` ;
+    let res = await fetch(url)
+    let data = await res.json();
+    console.log(data);
+    append3(data.articles)
+}
+
+neighboursNews()
+
+let append3 = (data)=>{
+
+    let container = document.getElementById("neighbourfirst")
+   
+    // data.forEach((el) => {
+        for(let i=20; i<data.length-77; i++){
+            let image = document.createElement("img")
+            image.src = data[i].urlToImage;
+
+            let title = document.createElement("h2")
+            title.innerText = data[i].title
+
+            let p = document.createElement("h2")
+            p.innerText = data[i].content
+
+            let div = document.createElement("div")
+            div.setAttribute("class", "neighbournews")
+            
+            div.append(image,title,p)
+            div.addEventListener("click",()=>{
+                let arr = [];
+                arr.push(data[i]);
+                localStorage.setItem("news",JSON.stringify(arr));
+                window.location.href="news.html";
+            })
+            container.append(div);
+        }
+        let cont = document.getElementById("neighboursecond")
+    
+        let image = document.createElement("img")
+        image.src = data[9].urlToImage
+    
+        cont.append(image);    
+}
+
+/////////////// ASIA NEWS //////////////////
+
+let asiaNews = async() =>{
+
+    let url = `https://newsapi.org/v2/everything?q=asia&from=2022-06-22&sortBy=publishedAt&apiKey=08e88dc30f0641c1bb12c5c0de28f60c` ;
+    let res = await fetch(url)
+    let data = await res.json();
+    console.log(data);
+    append4(data.articles)
+}
+
+asiaNews()
+
+let append4 = (data)=>{
+
+    let container = document.getElementById("asiafirst")
+   
+    // data.forEach((el) => {
+        for(let i=11; i<data.length-85; i++){
+            let image = document.createElement("img")
+            image.src = data[i].urlToImage;
+
+            let title = document.createElement("h2")
+            title.innerText = data[i].title
+
+            // let p = document.createElement("p")
+            // p.innerText = data[i].description
+
+            let div = document.createElement("div")
+            div.setAttribute("class", "asiafirstnews")
+            
+            div.append(image,title)
+            div.addEventListener("click",()=>{
+                let arr = [];
+                arr.push(data[i]);
+                localStorage.setItem("news",JSON.stringify(arr));
+                window.location.href="news.html";
+            })
+            container.append(div);
+        }
+        
+    // });
+
+    let container1 = document.getElementById("asiasecond")
+   
+    // data.forEach((el) => {
+        for(let i=15; i<data.length-81; i++){
+            let image = document.createElement("img")
+            image.src = data[i].urlToImage;
+
+            let title = document.createElement("h2")
+            title.innerText = data[i].title
+
+            // let p = document.createElement("p")
+            // p.innerText = data[i].description
+
+            let div = document.createElement("div")
+            div.setAttribute("class", "asiasecondnews")
+            
+            div.append(image,title)
+            div.addEventListener("click",()=>{
+                let arr = [];
+                arr.push(data[i]);
+                localStorage.setItem("news",JSON.stringify(arr));
+                window.location.href="news.html";
+            })
+            container1.append(div);
+        }
+}
