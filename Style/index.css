@@ -1,0 +1,254 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+
+}
+
+#top_navbar{
+    display: flex;
+    height: 40px;
+    width: 100%;
+    background-color: black;
+
+}
+
+#top_navbar #top_navbar_left{
+    height: auto;
+    width: 50%;
+    display: flex;
+    
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+#top_navbar > #top_navbar_left > .hamberger{
+    height: 30px;
+    width: 20px;
+    margin-left: 100px;
+}
+
+
+#top_navbar > #top_navbar_left  > .hamberger div{
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 5px;
+}
+
+#top_navbar > #top_navbar_left  > .hamberger > #hamberger1{
+    margin-top: 6px;
+}
+
+
+#top_navbar > #hamberger2{
+    height: 2px;
+    width: 10%;
+    background-color: #fff;
+}
+
+#top_navbar > #top_navbar_left > ul{
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+#e_paper{
+    margin-left: -25px;
+}
+
+#sunday{
+    margin-left: -50px;
+}
+
+#top_navbar > #top_navbar_left > .vl{
+    border-left: 1px solid white;
+    height: 20px;
+    margin-left: -40px;
+}
+
+
+#facebook_logo  > a > img{
+    height: 25px;
+    margin-left: -30px;
+}
+
+#twiter_logo > a > img{
+    height: 25px;
+    margin-left: -50px;
+}
+
+#insta_logo > a > img{
+    height: 25px;
+    margin-left: -80px;
+}
+
+#deccan_logo > a > img{
+    height: 25px;
+    margin-left: -105px;
+}
+
+
+#top_navbar_right{
+    height: auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#top_navbar_right > label{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: -130px;
+    font-weight: bold;
+}
+
+#top_navbar > #top_navbar_right > .vl-1{
+    border-left: 1px solid white;
+    height: 20px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: -120px;
+}
+
+#top_navbar > #top_navbar_right > ul{
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: -130px;
+}
+
+#page_logo{
+    height: auto;
+    width: 25%;
+    margin: auto;
+}
+
+#page_logo > a > img{
+    margin-top: 10px;
+    margin-left: 30px;
+    height: 60px;
+}
+
+#page_logo > #data_time > p{
+    text-align: center;
+    margin-top: 5px;
+    font-weight: 600;
+    letter-spacing: .20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+}
+
+#thick_line{
+    margin: auto;
+    width: 80%;
+    border: 1px solid black;
+    margin-top: 15px;
+}
+
+#nav_bar_content{
+    margin: auto;
+    display: flex;
+    width: 80%;
+    height: 40px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#nav_bar_content > a > img{
+    height: 20px;
+}
+
+/* #nav_bar_content > img :hover{
+
+} */
+
+#nav_bar_content > ul > a{
+    font-size: 22px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+
+#nav_bar_content > ul > a:hover{
+    background-color: lightgray;
+}
+
+#thin_line{
+    width: 80%;
+    margin: auto;
+    border: 0.001px solid lightgray;
+}
+
+
+/* Top stories */
+
+#top_stories_most_popular_column{
+    border: 1px solid black;
+    height:auto;
+    width: 80%;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: grid;
+    padding: 20px;
+    gap: 20px;
+     
+    
+}
+#top_stories{
+    border: 1px solid red;
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+#most_popular{
+    border: 1px solid green;
+    grid-row: 1/3;
+}
+#column{
+    border: 1px solid blue;
+    grid-column: 3/4;
+}
+.category_heading{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .6px;
+    
+}
+.category_heading>h2{
+    padding-bottom: 2px;
+    border-bottom-style: solid;
+    border-bottom-width: 3.5px;
+    border-bottom-color: red;
+    width: fit-content;
+    
+}
+#top_stories_container{
+    display: flex;
+    width: 100%;
+}
+#top_stories_big_cards{
+    width: 70%;
+}
+#top_stories_small_cards{
+    width: 30%;
+}
+
+.top_stories_big_cards{
+  width: 100%;
+  border: 1px solid black;
+}
+.top_stories_big_cards>img{
+    width: 100%;
+}
+.top_stories_small_cards{
+  width: 100%;
+  border: 1px solid black;
+}
+.top_stories_small_cards>img{
+    width: 100%;
+}
