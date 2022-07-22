@@ -5,6 +5,7 @@ body{
     margin-top: 100px;
     height: auto;
     /* border: solid 2px yellow; */
+    margin-bottom: 100px;
 }
 #icon{
     display: flex;
@@ -26,10 +27,10 @@ body{
 
 #worldNewshead{
     margin: auto;
-    /* width: 90%; */
-    /* height: 900px; */
-    /* border: solid 1px red; */
-   display: flex;
+    border-top: solid 1.5px;
+    border-bottom: solid 1px;
+    border-color: grey;
+    display: flex;
 }
 
 #worldNewshead>div{
@@ -93,6 +94,8 @@ body{
     font-size: 16px;
     margin-left: 15px;
 }
+/* Most Popular Css */
+
 #mostpopular{
     width: 29%;
     display: flex;
@@ -121,6 +124,7 @@ body{
     /* margin-right: 4px; */
     padding: 5px;
 }
+
 
 h1{
     margin-left: 15px;
@@ -195,6 +199,7 @@ h1{
     border-bottom: solid 1px;
     border-color: grey;
     display: flex;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 #neighboursNews>div{
     display: flex;
@@ -208,7 +213,6 @@ h1{
     width: 30%;
     /* height: 400px; */
     margin-left: 10px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     cursor: pointer;
 }
 .neighbournews img{
@@ -238,6 +242,7 @@ h1{
     border-bottom: solid 1px;
     border-color: grey;
     display: grid;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 #asiafirst{
@@ -251,7 +256,6 @@ h1{
     height: auto;
     margin: auto;
     display: grid;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     cursor: pointer;
 }
 .asiafirstnews img{
@@ -272,7 +276,6 @@ h1{
     width: 24%;
     margin: auto;
     display: flex;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     cursor: pointer;
 }
 .asiasecondnews img{
@@ -282,4 +285,153 @@ h1{
 .asiasecondnews h2{
     font-size: 14px;
     margin-left: 5px;
+}
+
+
+/*  Middle East css */
+
+#middleEastNews{
+    width: 100%;
+    /* height: 400px; */
+    /* border: solid 1px red; */
+    border-top: solid 1.5px;
+    border-bottom: solid 1px;
+    border-color: grey;
+    display: flex;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#middleEastNews>div{
+    display: flex;
+}
+#middleEastfirst{
+    width: 70%;
+    height: auto;
+    display: flex;
+}
+#middleEastfirst>div{
+    width: 30%;
+    /* height: 400px; */
+    margin-left: 10px;
+    cursor: pointer;
+}
+.middleEastnews img{
+    width: 100%;
+    height: 200px;
+}
+.middleEastnews h2{
+    font-size: 14px;
+    margin-left: 5px;
+}
+#middleEastsecond{
+    width: 29%;
+}
+#middleEastsecond img{
+    width: 100%;
+    height:290px;
+    padding: 10px;
+}
+
+
+/* AMERICA CSS */
+
+#americaNews{
+    width: 100%;
+    height: auto;
+    /* border: solid 1px red; */
+    display: grid;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    border-color: grey;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#americafirst{
+    width: 100%;
+    height: auto;
+    display: flex;
+    /* border: solid 1px green; */
+}
+#americafirst>div{
+    width: 24%;
+    height: auto;
+    margin: auto;
+    display: grid;
+    cursor: pointer;
+}
+.americafirstnews>div{
+    width: 100%;
+    height: 210px;
+    /* border: solid 1px teal; */
+    margin: auto;
+}
+.americafirstnews>div img{
+    width: 100%;
+    height: 210px;
+}
+.americafirstnews h2{
+    font-size: 15px;
+    margin-left: 5px;
+}
+#americasecond{
+    width: 100%;
+    height: auto;
+    display: flex;
+    /* border: solid 1px brown; */
+}
+#americasecond>div{
+    width: 24%;
+    margin: auto;
+    display: flex;
+    cursor: pointer;
+}
+.americasecondnews img{
+    width: 100px;
+    height: 90px;
+}
+.americasecondnews h2{
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+        /* Europe css */
+
+#europeNews{
+    width: 100%;
+    /* height: 400px; */
+    /* border: solid 1px red; */
+    border-top: solid 1.5px;
+    border-bottom: solid 1px;
+    border-color: grey;
+    display: flex;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#europeNews>div{
+    display: flex;
+}
+#europefirst{
+    width: 70%;
+    height: auto;
+    display: flex;
+}
+#europefirst>div{
+    width: 30%;
+    /* height: 400px; */
+    margin-left: 10px;
+    cursor: pointer;
+}
+.europenews img{
+    width: 100%;
+    height: 200px;
+}
+.europenews h2{
+    font-size: 14px;
+    margin-left: 5px;
+}
+#europesecond{
+    width: 29%;
+}
+#europesecond img{
+    width: 100%;
+    height:290px;
+    padding: 10px;
 }
