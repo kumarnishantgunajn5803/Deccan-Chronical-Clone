@@ -23,6 +23,9 @@ let displayData_for_bollywood = (data) => {
   for (let ele = 0; ele < 3; ele++) {
     let div = document.createElement("div");
     div.setAttribute("id", "bollywood-div");
+    div.addEventListener("click", function () {
+      showEle(data[ele]);
+    });
 
     let image = document.createElement("img");
     image.src = data[ele].urlToImage;
@@ -42,6 +45,9 @@ let displayData_for_bollywood = (data) => {
   for (let ele = 3; ele < data.length; ele++) {
     let div = document.createElement("div");
     div.setAttribute("id", "bollywood-small-blog-div");
+    div.addEventListener("click", function () {
+      showEle(data[ele]);
+    });
 
     let image = document.createElement("img");
     image.src = data[ele].urlToImage;
@@ -70,6 +76,9 @@ let displayData_for_hollywood = (data) => {
   data.forEach((ele) => {
     let div = document.createElement("div");
     div.setAttribute("class", "hollywood-div");
+    div.addEventListener("click", function () {
+      showEle(ele);
+    });
 
     let image = document.createElement("img");
     image.src = ele.urlToImage;
@@ -104,6 +113,9 @@ let displayData_for_television = (data) => {
   for (let ele = 0; ele < 3; ele++) {
     let div = document.createElement("div");
     div.setAttribute("id", "television-div");
+    div.addEventListener("click", function () {
+      showEle(data[ele]);
+    });
 
     let image = document.createElement("img");
     image.src = data[ele].urlToImage;
@@ -123,6 +135,9 @@ let displayData_for_television = (data) => {
   for (let ele = 3; ele < 7; ele++) {
     let div = document.createElement("div");
     div.setAttribute("id", "television-small-blog-div");
+    div.addEventListener("click", function () {
+      showEle(data[ele]);
+    });
 
     let image = document.createElement("img");
     image.src = data[ele].urlToImage;
@@ -135,3 +150,15 @@ let displayData_for_television = (data) => {
     television_small_blog.append(div);
   }
 };
+
+let arr = JSON.parse(localStorage.getItem("showData")) || [];
+
+function showEle(ele) {
+  arr = [];
+  arr.push(ele);
+  console.log(arr);
+  window.location.href = "showNews.html";
+  localStorage.setItem("showData", JSON.stringify(arr));
+}
+
+
