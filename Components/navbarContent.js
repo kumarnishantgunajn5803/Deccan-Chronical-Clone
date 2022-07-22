@@ -3,9 +3,8 @@ let navbarContent = () => {
     <div id="top_navbar">
         <div id="top_navbar_left">
           <div class="hamberger">
-            <div id="hamberger1"></div>
-            <div id="hamberger2"></div>
-            <div id="hamberger3"></div>
+            <div class="bar"></div>
+            
           </div>
           <ul id="e_paper">
             e-Paper
@@ -77,7 +76,7 @@ let navbarContent = () => {
           <a href="">World</a>
         </ul>
         <ul>
-          <a href="" id = "entertainment">Entertainment</a>
+          <a href="" id = "nav">Entertainment</a>
         </ul>
         <ul>
           <a href="">Job & Education</a>
