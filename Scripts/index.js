@@ -1,5 +1,9 @@
 import navbarContent from "../Components/navbarContent.js";
 document.getElementById("nav").innerHTML = navbarContent();
+import footer from "../Components/footer.js";
+document.getElementById("footer").innerHTML =footer();
+
+ 
 
 let api = `6109bd6263d04008b6253780b5f3725f`;
 let cont1= document.getElementById('top_stories_big_cards');
@@ -27,6 +31,9 @@ function append(data,container){
   for(let i =4;i<7;i++){
     let div =  document.createElement('div');
     div.setAttribute('class','top_stories_big_cards');
+    div.addEventListener("click", function () {
+      showEle(data[i]);
+    });
     let img = document.createElement('img');
     img.src=data[i].urlToImage;
 
@@ -50,6 +57,9 @@ function append1(data,container){
   for(let i =5;i<20;i++){
     let div =  document.createElement('div');
     div.setAttribute('class','top_stories_small_cards');
+    div.addEventListener("click", function () {
+      showEle(data[i]);
+    });
     let img = document.createElement('img');
     img.src=data[i].urlToImage;
 
@@ -71,6 +81,9 @@ function append2(data,container){
   for(let i =0;i<10;i++){
     let div =  document.createElement('div');
     div.setAttribute('class','most_popular_cards');
+    div.addEventListener("click", function () {
+      showEle(data[i]);
+    });
     let img = document.createElement('img');
     img.src=data[i].urlToImage;
 
@@ -103,6 +116,9 @@ function append_south(data,container){
   for(let i =72;i<80;i++){
     let div =  document.createElement('div');
     div.setAttribute('class','south_cards');
+    div.addEventListener("click", function () {
+      showEle(data[i]);
+    });
     let img = document.createElement('img');
     img.src=data[i].urlToImage;
 
@@ -142,6 +158,9 @@ function append_entertainment(data,container){
   for(let i =20;i<26;i++){
     let div =  document.createElement('div');
     div.setAttribute('class','entertainment_cards');
+    div.addEventListener("click", function () {
+      showEle(data[i]);
+    });
     let img = document.createElement('img');
     img.src=data[i].urlToImage;
 
@@ -182,6 +201,9 @@ function append_jobs(data,container){
   for(let i =20;i<24;i++){
     let div =  document.createElement('div');
     div.setAttribute('class','jobs_cards');
+    div.addEventListener("click", function () {
+      showEle(data[i]);
+    });
     let img = document.createElement('img');
     img.src=data[i].urlToImage;
 
@@ -222,6 +244,9 @@ function append_sports(data,container){
   for(let i =30;i<38;i++){
     let div =  document.createElement('div');
     div.setAttribute('class','sports_cards');
+    div.addEventListener("click", function () {
+      showEle(data[i]);
+    });
     let img = document.createElement('img');
     img.src=data[i].urlToImage;
 
@@ -261,6 +286,9 @@ function append_lifestyle(data,container){
   for(let i =10;i<18;i++){
     let div =  document.createElement('div');
     div.setAttribute('class','lifestyle_cards');
+    div.addEventListener("click", function () {
+      showEle(data[i]);
+    });
     let img = document.createElement('img');
     img.src=data[i].urlToImage;
 
@@ -299,6 +327,9 @@ function append_technology(data,container){
   for(let i =0;i<8;i++){
     let div =  document.createElement('div');
     div.setAttribute('class','technology_cards');
+    div.addEventListener("click", function () {
+      showEle(data[i]);
+    });
     let img = document.createElement('img');
     img.src=data[i].urlToImage;
 
@@ -337,6 +368,9 @@ function append_south_entertainment(data,container){
   for(let i =25;i<31;i++){
     let div =  document.createElement('div');
     div.setAttribute('class','south_entertainment_cards');
+    div.addEventListener("click", function () {
+      showEle(data[i]);
+    });
     let img = document.createElement('img');
     img.src=data[i].urlToImage;
 
@@ -373,6 +407,9 @@ function append_world(data,container){
   for(let i =0;i<8;i++){
     let div =  document.createElement('div');
     div.setAttribute('class','world_cards');
+    div.addEventListener("click", function () {
+      showEle(data[i]);
+    });
     let img = document.createElement('img');
     img.src=data[i].urlToImage;
 
@@ -411,6 +448,9 @@ function append_science(data,container){
   for(let i =0;i<8;i++){
     let div =  document.createElement('div');
     div.setAttribute('class','science_cards');
+    div.addEventListener("click", function () {
+      showEle(data[i]);
+    });
     let img = document.createElement('img');
     img.src=data[i].urlToImage;
 
@@ -447,6 +487,9 @@ function append_business(data,container){
   for(let i =0;i<8;i++){
     let div =  document.createElement('div');
     div.setAttribute('class','business_cards');
+    div.addEventListener("click", function () {
+      showEle(data[i]);
+    });
     let img = document.createElement('img');
     img.src=data[i].urlToImage;
 
@@ -483,6 +526,9 @@ function append_opinion(data,container){
   for(let i =0;i<8;i++){
     let div =  document.createElement('div');
     div.setAttribute('class','opinion_cards');
+    div.addEventListener("click", function () {
+      showEle(data[i]);
+    });
     let img = document.createElement('img');
     img.src=data[i].urlToImage;
 
@@ -519,6 +565,9 @@ function append_editor(data,container){
   for(let i =0;i<8;i++){
     let div =  document.createElement('div');
     div.setAttribute('class','editor_cards');
+    div.addEventListener("click", function () {
+      showEle(data[i]);
+    });
     let img = document.createElement('img');
     img.src=data[i].urlToImage;
 
@@ -534,3 +583,15 @@ function append_editor(data,container){
    
   }
 };
+
+
+
+let arr = JSON.parse(localStorage.getItem("showData")) || [];
+
+function showEle(ele) {
+  arr = [];
+  arr.push(ele);
+  console.log(arr);
+  window.location.href = "showNews.html";
+  localStorage.setItem("showData", JSON.stringify(arr));
+}

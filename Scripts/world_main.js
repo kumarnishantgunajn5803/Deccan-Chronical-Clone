@@ -2,6 +2,11 @@
 // `https://newsapi.org/v2/everything?q=tesla&from=2022-06-19&sortBy=publishedAt&apiKey=08e88dc30f0641c1bb12c5c0de28f60c` 
 
 // f21120aafe774c5c87c75812e7983fbd
+import navbarContent from "../Components/navbarContent.js";
+document.getElementById("nav").innerHTML = navbarContent();
+import footer from "../Components/footer.js";
+document.getElementById("footer").innerHTML =footer();
+
 
 let worldNews = async() =>{
     let url = `https://newsapi.org/v2/top-headlines?country&category=business&apiKey=f21120aafe774c5c87c75812e7983fbd`
