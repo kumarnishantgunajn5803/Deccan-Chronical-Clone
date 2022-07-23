@@ -5,8 +5,10 @@ import footerPart from "../Components/footer.js";
 document.getElementById("footer").innerHTML = footerPart();
 
 // 9252738d55da4b0fbb83499ac7299865
+// 384bb13c6cc64241871ad51164029236
+const api = "9252738d55da4b0fbb83499ac7299865"
 
-const URL_For_bollyood = `https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=384bb13c6cc64241871ad51164029236`;
+const URL_For_bollyood = `https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=${api}`;
 
 let getData_for_bollywood = async () => {
   let response = await fetch(URL_For_bollyood);
@@ -61,7 +63,7 @@ let displayData_for_bollywood = (data) => {
   }
 };
 
-const URL_For_hollyood = `https://newsapi.org/v2/top-headlines?country=us&category=entertainment&apiKey=384bb13c6cc64241871ad51164029236`;
+const URL_For_hollyood = `https://newsapi.org/v2/top-headlines?country=us&category=entertainment&apiKey=${api}`;
 let getData_for_hollywood = async () => {
   let response = await fetch(URL_For_hollyood);
   let data = await response.json();
@@ -96,7 +98,7 @@ let displayData_for_hollywood = (data) => {
   });
 };
 
-const URL_For_television = `https://newsapi.org/v2/top-headlines?country=pt&category=entertainment&apiKey=384bb13c6cc64241871ad51164029236`;
+const URL_For_television = `https://newsapi.org/v2/top-headlines?country=pt&category=entertainment&apiKey=${api}`;
 
 let getData_for_television = async () => {
   let response = await fetch(URL_For_television);

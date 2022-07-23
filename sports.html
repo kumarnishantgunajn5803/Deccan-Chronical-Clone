@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports News</title>
+    <style>
+        /* *{
+            padding: 10px;
+            margin: 10px;
+        } */
+
+        #main{
+width: 80%;
+            display: flex;
+            /* width: 80%; */
+            margin: auto;
+            /* border: 1px solid red; */
+            gap: 50px;
+        }
+#nation{
+display: grid;
+grid-template-columns: repeat(1,1fr);
+grid-template-rows: repeat(40,350px);
+gap: 20px;
+width: 60%;
+
+
+
+
+}
+#nation>div{
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    padding: 10px;
+border-radius: 20px;
+/* gap: 50px; */
+/* height:auto; */
+/* border: 1px solid red; */
+
+overflow: hidden;
+}
+#yoyo{
+    width: 100%;
+    /* height: 50%; */
+    border-radius: 20px;
+   
+}
+#nation2{
+
+width: 100%;
+height: 100%;
+/* border: 1px solid green; */
+
+}
+#nat{
+
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  grid-template-rows: repeat(70,120px);
+  gap: 20px;
+
+
+}
+#nat>div{
+    /* border: 1px solid green; */
+    display: flex;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    gap: 10px;
+    overflow: hidden;
+}
+#yoyo2{
+    width: 50%;
+    height: 100px;
+    /* margin-right: 10px; */
+    /* border-radius: 10px; */
+}
+h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+    </style>
+
+    <link rel="stylesheet" href="../demo/Style/entertainment.css">
+</head>
+<body>
+    <div id="nav">
+      
+    </div>
+    <div id="main">
+
+
+    <div id="nation">
+
+
+    </div>
+
+    <div id="nation2"> 
+   <div id="nat">
+
+   </div>
+       
+    </div>
+</div>
+</body>
+</html>
+<script src="../demo/Scripts/entertainment.js" type="module"></script>
+
+
+<script>
+
+ const url = `https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=c689f4b80be94667af482d9e0e68ac99`
+ data()
+ async function data(){
+
+    let res = await fetch(url)
+    let data = await res.json()
+
+    console.log(data)
+    append(data.articles)
+ }
+
+ function append(data){
+ data.forEach(function(elem){
+
+    let div = document.createElement("div")
+
+ let img = document.createElement("img")
+ img.src = elem.urlToImage
+img.setAttribute("id","yoyo")
+
+ let title = document.createElement("h2")
+ title.innerText= elem.title
+
+ let des = document.createElement("p")
+ des.innerText = elem.description
+
+ div.append(img,title,des)
+ document.querySelector("#nation").append(div)
+
+})
+
+
+ };
+
+
+ const uri=`https://newsapi.org/v2/everything?q=sports&apiKey=c689f4b80be94667af482d9e0e68ac99`
+ data2()
+ async function data2(){
+ 
+    let res = await fetch(uri)
+    let data = await res.json()
+
+    console.log(data)
+    appen(data.articles)
+
+ }
+
+ function appen(data){
+
+    data.forEach(function(elem){
+
+        let div = document.createElement("div")
+        let img = document.createElement("img")
+        img.src = elem.urlToImage
+        img.setAttribute("id","yoyo2")
+
+        let title = document.createElement("h3")
+        title.innerText= elem.title
+
+        let des = document.createElement("p")
+        des.innerText = elem.description
+
+        div.append(img,title,des)
+        document.querySelector("#nat").append(div)
+
+
+
+    })
+ }
+
+
+ const url2 = `https://newsapi.org/v2/top-headlines?country=us&category=sports&apiKey=c689f4b80be94667af482d9e0e68ac99`
+
+ 
+ data3()
+ async function data3(){
+
+    let res = await fetch(url2)
+    let data = await res.json()
+
+    console.log(data)
+    append(data.articles)
+ }
+ function append(data){
+ data.forEach(function(elem){
+
+    let div = document.createElement("div")
+
+ let img = document.createElement("img")
+ img.src = elem.urlToImage
+img.setAttribute("id","yoyo")
+
+ let title = document.createElement("h2")
+ title.innerText= elem.title
+
+ let des = document.createElement("p")
+ des.innerText = elem.description
+
+ div.append(img,title,des)
+ document.querySelector("#nation").append(div)
+
+})
+
+
+ };
+
+
+ const url3 =  `https://newsapi.org/v2/top-headlines?country=ca&category=sports&apiKey=9252738d55da4b0fbb83499ac7299865`
+
+ data4()
+ async function data4(){
+
+    let res = await fetch(url3)
+    let data = await res.json()
+
+    console.log(data)
+    append(data.articles)
+ }
+ function append(data){
+ data.forEach(function(elem){
+
+    let div = document.createElement("div")
+
+ let img = document.createElement("img")
+ img.src = elem.urlToImage
+img.setAttribute("id","yoyo")
+
+ let title = document.createElement("h2")
+ title.innerText= elem.title
+
+ let des = document.createElement("p")
+ des.innerText = elem.description
+
+ div.append(img,title,des)
+ document.querySelector("#nation").append(div)
+
+})
+
+
+ };
+
+</script>

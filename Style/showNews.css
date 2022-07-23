@@ -71,7 +71,7 @@
   padding: 5px;
 }
 
-#additional-news > #additional-news-blog > #additional-news-blog1 > div{
+#additional-news > #additional-news-blog > #additional-news-blog1 > div {
   display: flex;
   margin-bottom: 10px;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
@@ -83,8 +83,9 @@
   width: 130px;
 }
 
-#additional-news > #additional-news-blog > #additional-news-blog1 > div > p{
+#additional-news > #additional-news-blog > #additional-news-blog1 > div > p {
   font: 9px;
+  font-family: "Montserrat", sans-serif;
 }
 
 #additional-news2 {
@@ -105,7 +106,7 @@
   width: 40%;
 } */
 
-#additional-news2 > #additional-news2-blog > h2 {
+#additional-news2 > #additional-news2-blog > h3 {
   font-size: 30px;
   text-decoration: underline red;
   margin-bottom: 30px;
@@ -113,20 +114,28 @@
   font-family: "Montserrat", sans-serif;
 }
 
-#additional-news2 > #additional-news2-blog > #additional-news2-blog1{
+#additional-news2 > #additional-news2-blog > #additional-news2-blog1 {
   padding: 20px;
   margin-top: -30px;
 }
 
-#additional-news2 > #additional-news2-blog > #additional-news2-blog1 >  div {
+#additional-news2 > #additional-news2-blog > #additional-news2-blog1 > div {
   display: flex;
   margin-bottom: 10px;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   padding: 10px;
-} 
-#additional-news2 > #additional-news2-blog > #additional-news2-blog1 > div > img {
+}
+#additional-news2
+  > #additional-news2-blog
+  > #additional-news2-blog1
+  > div
+  > img {
   height: 80px;
   width: 120px;
   margin-left: 5px;
+}
+
+#additional-news2 > #additional-news2-blog > #additional-news2-blog1 > div > p {
+  font-family: "Montserrat", sans-serif;
 }
