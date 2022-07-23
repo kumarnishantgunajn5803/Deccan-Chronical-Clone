@@ -1,7 +1,7 @@
 import navbarContent from "../Components/navbarContent.js";
 document.getElementById("nav").innerHTML = navbarContent();
 
-let api = `9252738d55da4b0fbb83499ac7299865`;
+let api = `6109bd6263d04008b6253780b5f3725f`;
 let cont1= document.getElementById('top_stories_big_cards');
 let cont2= document.getElementById('top_stories_small_cards');
 let cont3= document.getElementById('most_popular');
