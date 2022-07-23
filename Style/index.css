@@ -6,7 +6,7 @@
     
 
 }
-
+ 
 #top_navbar{
     display: flex;
     height: 40px;
@@ -189,34 +189,43 @@
 /* Top stories */
 
 #top_stories_most_popular_column{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height:auto;
     width: 80%;
     margin: auto;
     margin-top: 80px;
-    margin-bottom: 80px;
+    margin-bottom: 10px;
     display: grid;
     padding: 20px;
-    gap: 20px;
+    gap: 5px;
      
     
 }
 #top_stories{
-    border: 1px solid red;
-    grid-column: 1/3;
+    border-right: 1px solid gray;
+
+    grid-column: 1/10;
     grid-row: 1/3;
 }
 #most_popular{
-    border: 1px solid green;
-    grid-row: 1/3;
+    border: 1px solid  gray;
+    background-color: rgb(246, 246, 246);
+    grid-column: 11/12;
+    grid-row: 1/2;
+    display: grid;
+    gap: 10px;
+    box-sizing: border-box;
+    padding: 10px;
 }
 #column{
-    border: 1px solid blue;
-    grid-column: 3/4;
+    /* border: 1px solid blue; */
+    grid-column: 11/12;
+    grid-row: 2/3;
 }
 .category_heading{
     font-family: 'Montserrat', sans-serif;
     letter-spacing: .6px;
+    margin-bottom: 10px;
     
 }
 .category_heading>h2{
@@ -232,23 +241,316 @@
     width: 100%;
 }
 #top_stories_big_cards{
-    width: 70%;
+    width: 60%;
+    margin-right: 10px;
+    display: grid;
+    gap: 10px;
+    font-family:'Montserrat', sans-serif;
+
 }
 #top_stories_small_cards{
-    width: 30%;
+    width: 40%;
+    font-family:'Montserrat', sans-serif;
+    box-sizing: border-box;
+    padding: 10px;
+
 }
 
 .top_stories_big_cards{
   width: 100%;
-  border: 1px solid black;
+  border: 1px solid gray;
 }
 .top_stories_big_cards>img{
     width: 100%;
 }
+.top_stories_big_cards>h2{
+    margin-bottom: 10px;
+}
+.top_stories_big_cards>p{
+    line-gap-override: 10px;
+}
 .top_stories_small_cards{
   width: 100%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid gray;
+
 }
 .top_stories_small_cards>img{
+    width: 40%;
+     
+    margin-right: 10px;
+    
+}
+.most_popular_cards{
     width: 100%;
+    display: flex;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 600;  
+    /* border: 1px solid red; */
+    border-bottom: 1px solid gray;
+}
+.most_popular_cards>img{
+  width: 200px;
+  height: 100px;
+}
+.column_cards{
+    display: flex;
+    font-family:'Montserrat', sans-serif;
+    padding: 10px;
+    line-height: 25px;
+    border-top:1px solid gray ;
+     border-bottom:1px solid gray ;
+     
+}
+ 
+.column_cards>div>h3{
+     color: rgb(63, 63, 63);
+     
+}
+ 
+.column_cards>div>h5{
+     color: gray
+}
+ 
+.column_cards>img{
+    border-radius: 50%;
+}
+#cartoon_of_the_day{
+    width: 80%;
+    margin: auto;
+}
+#cartoon_of_the_day>div>h2{
+    
+ 
+    justify-content: space-between;
+    display:inline;
+    width: fit-content;
+    margin-right: 20%;
+}
+.thick_hr{
+    width: 80%;
+    margin: auto;
+    border: 1px solid gray;
+    background-color: gray;
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+hr{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+#cartoon_container{
+    display: flex;
+}
+#cartoon_container>img{
+    width: 600px;
+    height: 300px;
+
+}
+#cartoon_container>img:last-child{
+    width: 220px;
+    height: 400px;
+}
+#south{
+    width: 80%;
+    margin: auto;
+     
+     
+}
+.south_cards{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+        font-family:'Montserrat', sans-serif;
+
+}
+.south_cards>img{
+    width: 100%;
+
+}
+#south_cards_container{
+    display: grid;
+    /* grid-template-rows: 400px,200px; */
+    grid-template-columns: repeat(4,1fr);
+     gap: 20px;
+
+}
+
+#south_hr{
+    margin-top: 30px;
+}
+#entertainment{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    border: 1px solid transparent;
+    padding: 20px;
+    background-color: rgb(205, 205, 205);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+}
+#entertainment_container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    font-family:'Montserrat', sans-serif;
+
+}
+.entertainment_cards>img{
+    width: 100%;
+    height: 250px;
+}
+#jobs{
+    width: 80%;
+    margin: auto;
+}
+#jobs_container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    font-family:'Montserrat', sans-serif;
+}
+.jobs_cards>img{
+       width: 100%;
+       height: 200px;
+}
+#sports{
+    width: 80%;
+    margin: auto;
+}
+#sports_container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    font-family:'Montserrat', sans-serif;
+}
+.sports_cards>img{
+       width: 100%;
+       height: 200px;
+}
+#lifestyle{
+    width: 80%;
+    margin: auto;
+}
+#lifestyle_container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    font-family:'Montserrat', sans-serif;
+}
+.lifestyle_cards>img{
+       width: 100%;
+       height: 200px;
+}
+#technology{
+    width: 80%;
+    margin: auto;
+}
+#technology_container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    font-family:'Montserrat', sans-serif;
+}
+.technology_cards>img{
+       width: 100%;
+       height: 200px;
+}
+
+#south_entertainment{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    border: 1px solid transparent;
+    padding: 20px;
+    background-color: rgb(205, 205, 205);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+}
+#south_entertainment_container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    font-family:'Montserrat', sans-serif;
+
+}
+.south_entertainment_cards>img{
+    width: 100%;
+    height: 250px;
+}
+
+#world{
+    width: 80%;
+    margin: auto;
+}
+#world_container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    font-family:'Montserrat', sans-serif;
+}
+.world_cards>img{
+       width: 100%;
+       height: 200px;
+}
+#science{
+    width: 80%;
+    margin: auto;
+}
+#science_container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    font-family:'Montserrat', sans-serif;
+}
+.science_cards>img{
+       width: 100%;
+       height: 200px;
+}
+#business{
+    width: 80%;
+    margin: auto;
+}
+#business_container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    font-family:'Montserrat', sans-serif;
+}
+.business_cards>img{
+       width: 100%;
+       height: 200px;
+}
+#opinion{
+    width: 80%;
+    margin: auto;
+}
+#opinion_container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    font-family:'Montserrat', sans-serif;
+}
+.opinion_cards>img{
+       width: 100%;
+       height: 200px;
+}
+#editor{
+    width: 80%;
+    margin: auto;
+}
+#editor_container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    font-family:'Montserrat', sans-serif;
+}
+.editor_cards>img{
+       width: 100%;
+       height: 200px;
+}
+div:hover{
+    cursor: pointer;
 }
