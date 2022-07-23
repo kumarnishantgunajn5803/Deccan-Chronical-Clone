@@ -3,9 +3,9 @@ let navbarContent = () => {
     <div id="top_navbar">
         <div id="top_navbar_left">
           <div class="hamberger">
-            <div id="hamberger1"></div>
-            <div id="hamberger2"></div>
-            <div id="hamberger3"></div>
+            <div class="bar"></div>
+            <div class="menu"></div>
+            
           </div>
           <ul id="e_paper">
             e-Paper
@@ -68,22 +68,22 @@ let navbarContent = () => {
       alt=""
     /></a>
         <ul>
-          <a href="">Nation</a>
+          <a href="./nationnews.html">Nation</a>
         </ul>
         <ul>
-          <a href="">South</a>
+          <a href="./southnews.html">South</a>
         </ul>
         <ul>
-          <a href="">World</a>
+          <a href="./world.html">World</a>
         </ul>
         <ul>
-          <a href="">Entertainment</a>
+          <a href="./Entertainment.html">Entertainment</a>
         </ul>
         <ul>
           <a href="">Job & Education</a>
         </ul>
         <ul>
-          <a href="">Sports</a>
+          <a href="./sports.html">Sports</a>
         </ul>
         <ul>
           <a href="">technology</a>
