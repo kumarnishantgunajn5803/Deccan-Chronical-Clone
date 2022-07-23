@@ -30,6 +30,28 @@
   margin-left: 100px;
 }
 
+.hamberger .bar, .hamberger:after, .hamberger:before{
+  content: '';
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  margin: 6px 0px;
+  transition: 0.4s;
+}
+
+.hamberger.is-active:before{
+  opacity: 0.3;
+}
+
+.hamberger.is-active:after{
+  opacity: 0.3;
+} 
+
+.hamberger.is-active .bar{
+  opacity: 0.3;
+}
+
 
 #top_navbar > #top_navbar_left > ul {
   color: #fff;
