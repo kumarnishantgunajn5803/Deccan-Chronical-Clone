@@ -234,6 +234,7 @@ p{
    width: 80%;
    height: 50px;
    gap: 20px;
+  
 }
 #shortcut >div{
    display: flex;
@@ -242,7 +243,7 @@ p{
    font-size: 20px;
 }
 #shortcut :last-child{
-   margin-left: 30px;
+   margin-left: 10px;
 }
 #char p{
    font-size: 25px;
@@ -252,4 +253,11 @@ p{
    border: solid 1px grey;
    margin: auto;
    width: 80%;
+}
+#char p a{
+   text-decoration: none;
+   color: black;
+}
+#atag i{
+   color: black;
 }

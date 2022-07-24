@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/440a1d157b.js" 
+        crossorigin="anonymous">
+    </script>
     <title>Document</title>
     
     <link rel="stylesheet" href="./Style/showNews.css" />
@@ -43,3 +46,26 @@
 </html>
 
 <script src="./Scripts/showNews.js" type="module"></script>
+
+<script>
+  function show() {
+     document.getElementById('sidebar').classList.toggle('active')
+
+  }
+
+  document.getElementById('close-btn').addEventListener('click', close);
+
+  function close() {
+
+     document.getElementById('sidebar').classList.remove('active')
+  }
+
+
+  document.getElementById('search-icon').addEventListener('click', searchSlide);
+  function searchSlide() {
+
+     document.getElementById('search-bar').classList.toggle('active')
+  }
+
+
+</script>

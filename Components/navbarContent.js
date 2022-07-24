@@ -388,19 +388,19 @@ let navbarContent = () => {
 
 </div>
 <div id="shortcut">
-  <div>
-     <i class="fa-solid fa-house-chimney"></i>
+  <div id="atag">
+  <a href="index.html"><i class="fa-solid fa-house-chimney"></i></a>
   </div>
   <div id="char">
-     <p>Nation</p>
-     <p>south</p>
-     <p>World</p>
-     <p>Entertainment</p>
-     <p>Jobs & Education</p>
-     <p>Sports</p>
-     <p>Technology</p>
+     <p><a href="nationnews.html">Nation</a></p>
+     <p><a href="southnews.html">South</a></p>
+     <p><a href="world_main.html">World</a></p>
+     <p><a href="Entertainment.html">Entertainment</a></p>
+     <p><a href="">Jobs & Education</a></p>
+     <p><a href="sports.html">Sports</a></p>
+     <p><a href="technology1.html">Technology</a></p>
      <p>Lifestyle</p>
-     <p>Gallery</p>
+     <p><a href="Gallery.html">Gallery</a></p>
      <p>More...</p>
   </div>
 </div>

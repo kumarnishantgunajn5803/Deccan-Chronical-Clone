@@ -1,4 +1,10 @@
 
+import navbarContent from "../Components/navbarContent.js";
+document.getElementById("nav").innerHTML = navbarContent();
+
+import footer from "../Components/footer.js";
+document.getElementById("footer").innerHTML =footer();
+
 
 let newsData = JSON.parse(localStorage.getItem("news"));
 

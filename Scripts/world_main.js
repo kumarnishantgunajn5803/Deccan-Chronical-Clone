@@ -43,7 +43,7 @@ let append = (data)=>{
                 let arr = [];
                 arr.push(data[i]);
                 localStorage.setItem("news",JSON.stringify(arr));
-                window.location.href="news.html";
+                window.location.href="../details/news.html";
             })
             container.append(div);
         }
@@ -74,7 +74,7 @@ let append = (data)=>{
                 let arr = [];
                 arr.push(data[i]);
                 localStorage.setItem("news",JSON.stringify(arr));
-                window.location.href="news.html";
+                window.location.href="../details/news.html";
             })
             container1.append(div);
         }
@@ -119,7 +119,7 @@ let append1 = (data)=>{
                 let arr = [];
                 arr.push(data[i]);
                 localStorage.setItem("news",JSON.stringify(arr));
-                window.location.href="news.html";
+                window.location.href="../details/news.html";
             })
             container.append(div);
         }
@@ -130,7 +130,7 @@ let append1 = (data)=>{
 
 let galleryNews = async() =>{
 
-    let url = `https://newsapi.org/v2/everything?q=gallery&from=2022-06-22&sortBy=publishedAt&apiKey=08e88dc30f0641c1bb12c5c0de28f60c` ;
+    let url =  `https://newsapi.org/v2/top-headlines?country&category=business&apiKey=f21120aafe774c5c87c75812e7983fbd` ;
     let res = await fetch(url)
     let data = await res.json();
     console.log(data);
@@ -144,7 +144,7 @@ let append2 = (data)=>{
     let container = document.getElementById("galleryfirst")
    
     // data.forEach((el) => {
-        for(let i=0; i<data.length-96; i++){
+        for(let i=0; i<data.length-16; i++){
             let image = document.createElement("img")
             image.src = data[i].urlToImage;
 
@@ -166,7 +166,7 @@ let append2 = (data)=>{
                 let arr = [];
                 arr.push(data[i]);
                 localStorage.setItem("news",JSON.stringify(arr));
-                window.location.href="news.html";
+                window.location.href="../details/news.html";
             })
             container.append(div);
         }
@@ -182,7 +182,7 @@ let append2 = (data)=>{
 
 let neighboursNews = async() =>{
 
-    let url = `https://newsapi.org/v2/everything?q=neighbour&from=2022-06-22&sortBy=publishedAt&apiKey=08e88dc30f0641c1bb12c5c0de28f60c` ;
+    let url = `https://newsapi.org/v2/top-headlines?country&category=business&apiKey=f21120aafe774c5c87c75812e7983fbd` ;
     let res = await fetch(url)
     let data = await res.json();
     console.log(data);
@@ -196,7 +196,7 @@ let append3 = (data)=>{
     let container = document.getElementById("neighbourfirst")
    
     // data.forEach((el) => {
-        for(let i=20; i<data.length-77; i++){
+        for(let i=0; i<data.length-17; i++){
             let image = document.createElement("img")
             image.src = data[i].urlToImage;
 
@@ -214,7 +214,7 @@ let append3 = (data)=>{
                 let arr = [];
                 arr.push(data[i]);
                 localStorage.setItem("news",JSON.stringify(arr));
-                window.location.href="news.html";
+                window.location.href="../details/news.html";
             })
             container.append(div);
         }
@@ -230,7 +230,7 @@ let append3 = (data)=>{
 
 let asiaNews = async() =>{
 
-    let url = `https://newsapi.org/v2/everything?q=asia&from=2022-06-22&sortBy=publishedAt&apiKey=08e88dc30f0641c1bb12c5c0de28f60c` ;
+    let url =  `https://newsapi.org/v2/top-headlines?country&category=business&apiKey=f21120aafe774c5c87c75812e7983fbd` ;
     let res = await fetch(url)
     let data = await res.json();
     console.log(data);
@@ -244,7 +244,7 @@ let append4 = (data)=>{
     let container = document.getElementById("asiafirst")
    
     // data.forEach((el) => {
-        for(let i=11; i<data.length-85; i++){
+        for(let i=11; i<data.length-5; i++){
             let image = document.createElement("img")
             image.src = data[i].urlToImage;
 
@@ -262,7 +262,7 @@ let append4 = (data)=>{
                 let arr = [];
                 arr.push(data[i]);
                 localStorage.setItem("news",JSON.stringify(arr));
-                window.location.href="news.html";
+                window.location.href="../details/news.html";
             })
             container.append(div);
         }
@@ -290,7 +290,7 @@ let append4 = (data)=>{
                 let arr = [];
                 arr.push(data[i]);
                 localStorage.setItem("news",JSON.stringify(arr));
-                window.location.href="news.html";
+                window.location.href="../details/news.html";
             })
             container1.append(div);
         }
@@ -301,7 +301,7 @@ let append4 = (data)=>{
 let middleEastNews = async() =>{
 
     // let url = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=f21120aafe774c5c87c75812e7983fbd`;
-    let url = `https://newsapi.org/v2/everything?q=middleeast&from=2022-06-22&sortBy=publishedAt&apiKey=08e88dc30f0641c1bb12c5c0de28f60c` ;
+    let url =  `https://newsapi.org/v2/top-headlines?country&category=business&apiKey=f21120aafe774c5c87c75812e7983fbd` ;
     let res = await fetch(url)
     let data = await res.json();
     console.log(data);
@@ -315,7 +315,7 @@ let append5 = (data)=>{
     let container = document.getElementById("middleEastfirst")
    
     // data.forEach((el) => {
-        for(let i=10; i<data.length-86; i++){
+        for(let i=10; i<data.length-6; i++){
             let image = document.createElement("img")
             image.src = data[i].urlToImage;
 
@@ -333,7 +333,7 @@ let append5 = (data)=>{
                 let arr = [];
                 arr.push(data[i]);
                 localStorage.setItem("news",JSON.stringify(arr));
-                window.location.href="news.html";
+                window.location.href="../details/news.html";
             })
             container.append(div);
         }
@@ -385,7 +385,7 @@ let append6 = (data)=>{
                 let arr = [];
                 arr.push(data[i]);
                 localStorage.setItem("news",JSON.stringify(arr));
-                window.location.href="news.html";
+                window.location.href="../details/news.html";
             })
             container.append(div);
         }
@@ -413,7 +413,7 @@ let append6 = (data)=>{
                 let arr = [];
                 arr.push(data[i]);
                 localStorage.setItem("news",JSON.stringify(arr));
-                window.location.href="news.html";
+                window.location.href="../details/news.html";
             })
             container1.append(div);
         }
@@ -423,7 +423,7 @@ let append6 = (data)=>{
 
 let europeNews = async() =>{
 
-    let url = `https://newsapi.org/v2/everything?q=europe&from=2022-06-22&sortBy=publishedAt&apiKey=08e88dc30f0641c1bb12c5c0de28f60c` ;
+    let url =  `https://newsapi.org/v2/top-headlines?country&category=business&apiKey=f21120aafe774c5c87c75812e7983fbd` ;
     let res = await fetch(url)
     let data = await res.json();
     console.log(data);
@@ -437,7 +437,7 @@ let append7 = (data)=>{
     let container = document.getElementById("europefirst")
    
     // data.forEach((el) => {
-        for(let i=20; i<data.length-76; i++){
+        for(let i=10; i<data.length-6; i++){
             let image = document.createElement("img")
             image.src = data[i].urlToImage;
 
@@ -455,7 +455,7 @@ let append7 = (data)=>{
                 let arr = [];
                 arr.push(data[i]);
                 localStorage.setItem("news",JSON.stringify(arr));
-                window.location.href="news.html";
+                window.location.href="../details/news.html";
             })
             container.append(div);
         }
@@ -472,7 +472,7 @@ let append7 = (data)=>{
 
 let africaNews = async() =>{
 
-    let url = `https://newsapi.org/v2/everything?q=africa&from=2022-06-22&sortBy=publishedAt&apiKey=08e88dc30f0641c1bb12c5c0de28f60c` ;
+    let url =  `https://newsapi.org/v2/top-headlines?country&category=business&apiKey=f21120aafe774c5c87c75812e7983fbd` ;
     let res = await fetch(url)
     let data = await res.json();
     console.log(data);
@@ -486,7 +486,7 @@ let append8 = (data)=>{
     let container = document.getElementById("africafirst")
    
     // data.forEach((el) => {
-        for(let i=11; i<data.length-85; i++){
+        for(let i=11; i<data.length-5; i++){
             let image = document.createElement("img")
             image.src = data[i].urlToImage;
 
@@ -507,7 +507,7 @@ let append8 = (data)=>{
                 let arr = [];
                 arr.push(data[i]);
                 localStorage.setItem("news",JSON.stringify(arr));
-                window.location.href="news.html";
+                window.location.href="../details/news.html";
             })
             container.append(div);
         }
@@ -535,7 +535,7 @@ let append8 = (data)=>{
                 let arr = [];
                 arr.push(data[i]);
                 localStorage.setItem("news",JSON.stringify(arr));
-                window.location.href="news.html";
+                window.location.href="../details/news.html";
             })
             container1.append(div);
         }
@@ -545,7 +545,7 @@ let append8 = (data)=>{
 
 let ausNdnzNews = async() =>{
 
-    let url = `https://newsapi.org/v2/everything?q=nz&from=2022-06-22&sortBy=publishedAt&apiKey=08e88dc30f0641c1bb12c5c0de28f60c` ;
+    let url =  `https://newsapi.org/v2/top-headlines?country&category=business&apiKey=f21120aafe774c5c87c75812e7983fbd` ;
     let res = await fetch(url)
     let data = await res.json();
     console.log(data);
@@ -559,7 +559,7 @@ let append9 = (data)=>{
     let container = document.getElementById("ausNdnzfirst")
    
     // data.forEach((el) => {
-        for(let i=20; i<data.length-76; i++){
+        for(let i=9; i<data.length-7; i++){
             let image = document.createElement("img")
             image.src = data[i].urlToImage;
 
@@ -577,7 +577,7 @@ let append9 = (data)=>{
                 let arr = [];
                 arr.push(data[i]);
                 localStorage.setItem("news",JSON.stringify(arr));
-                window.location.href="news.html";
+                window.location.href="../details/news.html";
             })
             container.append(div);
         }
