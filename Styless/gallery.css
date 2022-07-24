@@ -1,0 +1,363 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+#head-of-gallery {
+  height: 610px;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  background-color: #e6e6e6;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  margin-bottom: 40px;
+}
+
+#head-of-gallery > #head-of-gallery-Blog h1 {
+  font-size: 27px;
+  text-decoration: underline red;
+  margin-bottom: 30px;
+  font-family: "Montserrat", sans-serif;
+  padding: 20px;
+}
+
+#head-of-gallery-Blog1 {
+  display: flex;
+  gap: 30px;
+  height: 500px;
+  width: 100%;
+  /* border: 1px solid rebeccapurple; */
+  padding-left: 45px;
+  margin-top: -20px;
+}
+
+#head_sub_blog1 {
+  height: 516px;
+  width: 55%;
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* border: 1px solid black; */
+}
+
+#head_sub_blog1 > div > img {
+  height: 515px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+#head_sub_blog2 {
+  height: 516px;
+  width: 40%;
+  /* border: 1px solid black; */
+}
+
+#head_sub_blog2 > div {
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  margin: 4px;
+  border-radius: 5px;
+}
+
+#head_sub_blog2 > div > img {
+  height: 100px;
+  width: 40%;
+  border-radius: 5px;
+}
+
+#head_sub_blog2 > div > p {
+  width: 40%;
+  margin-left: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+#head-of-gallery2 {
+  height: auto;
+  width: 80%;
+
+  /* border: 1px solid red; */
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+#head-of-gallery2 #head2_sub_blog_entertainment h1 {
+  font-size: 27px;
+  text-decoration: underline red;
+  margin-bottom: 30px;
+  font-family: "Montserrat", sans-serif;
+  padding: 20px;
+}
+
+#head-of-gallery-Blog2 {
+  height: auto;
+  width: 100%;
+  /* border: 1px solid black; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding-left: 40px;
+  margin-top: -30px;
+}
+
+#head-of-gallery-Blog2 > div {
+  height: auto;
+  width: 90%;
+  /* border: 1px solid green; */
+}
+
+#head-of-gallery-Blog2 > div > img {
+  height: 200px;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+#head-of-gallery-Blog2 > div > p {
+  margin-top: 6px;
+  font-family: "Montserrat", sans-serif;
+}
+
+#head-of-gallery3 {
+  height: auto;
+  width: 80%;
+
+  /* border: 1px solid red; */
+  margin: auto;
+  background-color: #e6e6e6;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 5px;
+  margin-bottom: 70px;
+}
+
+#head2_sub_blog_lifestyle > h1 {
+  font-size: 27px;
+  text-decoration: underline red;
+  margin-bottom: 30px;
+  font-family: "Montserrat", sans-serif;
+  padding: 20px;
+}
+
+#head-of-gallery-Blog3 {
+  height: auto;
+  width: 100%;
+  /* border: 1px solid black; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding-left: 40px;
+  margin-top: -30px;
+}
+
+#head-of-gallery-Blog3 > div {
+  height: auto;
+  width: 90%;
+  /* border: 1px solid green; */
+}
+
+#head-of-gallery-Blog3 > div > img {
+  height: 200px;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 5px;
+}
+
+#head-of-gallery-Blog3 > div > p {
+  margin-top: 6px;
+  font-family: "Montserrat", sans-serif;
+}
+
+#head-of-gallery4 {
+  height: auto;
+  width: 80%;
+
+  /* border: 1px solid red; */
+  margin: auto;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+
+#head2_sub_blog_technology > h1 {
+  font-size: 27px;
+  text-decoration: underline red;
+  margin-bottom: 30px;
+  font-family: "Montserrat", sans-serif;
+  padding: 20px;
+}
+
+#head-of-gallery-Blog4 {
+  height: auto;
+  width: 100%;
+  /* border: 1px solid black; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding-left: 40px;
+  margin-top: -30px;
+}
+
+#head-of-gallery-Blog4 > div {
+  height: auto;
+  width: 90%;
+  /* border: 1px solid green; */
+}
+
+#head-of-gallery-Blog4 > div > img {
+  height: 200px;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 5px;
+}
+
+#head-of-gallery-Blog4 > div > p {
+  margin-top: 6px;
+  font-family: "Montserrat", sans-serif;
+}
+
+#head-of-gallery5 {
+  height: auto;
+  width: 80%;
+  margin-bottom: 40px;
+  /* border: 1px solid red; */
+  margin: auto;
+  border-radius: 5px;
+  background-color: #e6e6e6;
+
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+#head2_sub_blog_sport > h1 {
+  font-size: 27px;
+  text-decoration: underline red;
+  margin-bottom: 30px;
+  font-family: "Montserrat", sans-serif;
+  padding: 20px;
+}
+
+#head-of-gallery-Blog5 {
+  height: auto;
+  width: 100%;
+  /* border: 1px solid black; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding-left: 40px;
+  margin-top: -30px;
+}
+
+#head-of-gallery-Blog5 > div {
+  height: auto;
+  width: 90%;
+  /* border: 1px solid green; */
+}
+
+#head-of-gallery-Blog5 > div > img {
+  height: 200px;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+#head-of-gallery-Blog5 > div > p {
+  margin-top: 6px;
+  font-family: "Montserrat", sans-serif;
+}
+
+#head-of-gallery6 {
+  height: auto;
+  width: 80%;
+
+  /* border: 1px solid red; */
+  margin: auto;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+
+#head2_sub_blog_world > h1 {
+  font-size: 27px;
+  text-decoration: underline red;
+  margin-bottom: 30px;
+  font-family: "Montserrat", sans-serif;
+  padding: 20px;
+}
+
+#head-of-gallery-Blog6 {
+  height: auto;
+  width: 100%;
+  /* border: 1px solid black; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding-left: 40px;
+  margin-top: -30px;
+}
+
+#head-of-gallery-Blog6 > div {
+  height: auto;
+  width: 90%;
+  /* border: 1px solid green; */
+}
+
+#head-of-gallery-Blog6 > div > img {
+  height: 200px;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+#head-of-gallery-Blog6 > div > p {
+  margin-top: 6px;
+  font-family: "Montserrat", sans-serif;
+}
+
+#head-of-gallery7 {
+  height: auto;
+  width: 80%;
+
+  /* border: 1px solid red; */
+  margin: auto;
+  border-radius: 5px;
+  background-color: #e6e6e6;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  margin-bottom: 40px;
+}
+
+#head2_sub_blog_science > h1 {
+  font-size: 27px;
+  text-decoration: underline red;
+  margin-bottom: 30px;
+  font-family: "Montserrat", sans-serif;
+  padding: 20px;
+}
+
+#head-of-gallery-Blog7 {
+  height: auto;
+  width: 100%;
+  /* border: 1px solid black; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding-left: 40px;
+  margin-top: -30px;
+}
+
+#head-of-gallery-Blog7 > div {
+  height: auto;
+  width: 90%;
+  /* border: 1px solid green; */
+}
+
+#head-of-gallery-Blog7 > div > img {
+  height: 200px;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+#head-of-gallery-Blog7 > div > p {
+  margin-top: 6px;
+  font-family: "Montserrat", sans-serif;
+}
