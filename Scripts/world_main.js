@@ -4,6 +4,7 @@
 // f21120aafe774c5c87c75812e7983fbd
 import navbarContent from "../Components/navbarContent.js";
 document.getElementById("nav").innerHTML = navbarContent();
+
 import footer from "../Components/footer.js";
 document.getElementById("footer").innerHTML =footer();
 

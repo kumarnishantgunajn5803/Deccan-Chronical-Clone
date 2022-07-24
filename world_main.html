@@ -8,7 +8,7 @@
     <script src="https://kit.fontawesome.com/440a1d157b.js" 
         crossorigin="anonymous">
     </script>
-    <link rel="stylesheet" href="./Style/navbar.css">
+    <link rel="stylesheet" href="./hamburger/hamburger.css">
     <link rel="stylesheet" href="./Style/world_main.css">
     
     <link rel="stylesheet" href="./Style/footer.css">
@@ -17,6 +17,7 @@
     <div id="nav">
       
     </div>
+    <div id="worldbody">
     <div id="ads">
         <img src="https://www.freshbooks.com/wp-content/uploads/Generic_4@2x-1280x258.png" alt="">
     </div>
@@ -26,7 +27,7 @@
             <i class="fa-solid fa-angles-right"></i>
         </div>
         <div id="iconsecond">
-            <p>world</p>
+            <!-- <p>world</p> -->
         </div>
     </div>
           <!-- world div section -->
@@ -141,10 +142,33 @@
 
        </div>
     </div>
-
+    </div>
     <div id="footer"></div>
 
 </body>
 </html>
 
 <script src="./Scripts/world_main.js" type="module"></script>
+
+<script>
+    function show() {
+       document.getElementById('sidebar').classList.toggle('active')
+ 
+    }
+ 
+    document.getElementById('close-btn').addEventListener('click', close);
+ 
+    function close() {
+ 
+       document.getElementById('sidebar').classList.remove('active')
+    }
+ 
+ 
+    document.getElementById('search-icon').addEventListener('click', searchSlide);
+    function searchSlide() {
+ 
+       document.getElementById('search-bar').classList.toggle('active')
+    }
+ 
+ 
+ </script>
