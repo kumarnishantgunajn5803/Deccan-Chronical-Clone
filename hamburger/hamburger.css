@@ -248,3 +248,8 @@ p{
    font-size: 25px;
    font-weight: bold;
 }
+#lastline{
+   border: solid 1px grey;
+   margin: auto;
+   width: 80%;
+}
