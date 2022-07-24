@@ -5,7 +5,7 @@ document.getElementById("footer").innerHTML =footer();
 
  
 
-let api = `6109bd6263d04008b6253780b5f3725f`;
+let api = 'dc646f3fe3df49938f899054f04d6265';
 let cont1= document.getElementById('top_stories_big_cards');
 let cont2= document.getElementById('top_stories_small_cards');
 let cont3= document.getElementById('most_popular');
