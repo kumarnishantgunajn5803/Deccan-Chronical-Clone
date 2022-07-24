@@ -63,7 +63,7 @@ let navbarContent = () => {
       <div id="thick_line"></div>
 
       <div id="nav_bar_content">
-      <a href=""><img
+      <a href="./index.html"><img
       src="https://www.freepnglogos.com/uploads/logo-home-png/chimney-home-icon-transparent-1.png"
       alt=""
     /></a>
@@ -74,7 +74,7 @@ let navbarContent = () => {
           <a href="./southnews.html">South</a>
         </ul>
         <ul>
-          <a href="./world.html">World</a>
+          <a href="./world_main.html">World</a>
         </ul>
         <ul>
           <a href="./Entertainment.html">Entertainment</a>
@@ -86,13 +86,13 @@ let navbarContent = () => {
           <a href="./sports.html">Sports</a>
         </ul>
         <ul>
-          <a href="">technology</a>
+          <a href="./technology1.html">technology</a>
         </ul>
         <ul>
           <a href="">Lifestyle</a>
         </ul>
         <ul>
-          <a href="">Gallery</a>
+          <a href="./Gallery.html">Gallery</a>
         </ul>
         <ul>
           <a href="">More... &#8964;</a>
