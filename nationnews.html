@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/440a1d157b.js" crossorigin="anonymous">
+    </script>
     <title>Nation Newst</title>
     <style>
         /* *{
@@ -19,18 +21,18 @@
             /* border: 1px solid red; */
             gap: 50px;
         }
-#nation{
+#nation1{
 display: grid;
 grid-template-columns: repeat(1,1fr);
 grid-template-rows: repeat(40,400px);
 gap: 20px;
 width: 60%;
 
-
+overflow: hidden;
 
 
 }
-#nation>div{
+#nation1>div{
     /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
     padding: 10px;
@@ -69,6 +71,7 @@ height: 100%;
     padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
     gap: 10px;
+    overflow: hidden;
 }
 #yoyo2{
     width: 50%;
@@ -77,21 +80,403 @@ height: 100%;
     /* border-radius: 10px; */
 }
 
+#thor{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
 
 
     </style>
 
-    <link rel="stylesheet" href="../demo/Style/entertainment.css">
+    <link rel="stylesheet" href="./Styless/navbar.css">
+    <link rel="stylesheet" href="./Styless/footer.css">
+    
 </head>
 <body>
+  <div id="container1">
+    <div id="box">
+       <div id="box1">
+          <div>
+             <h2>e-Paper</h2>
+          </div>
+          <div>
+             <h2>| Sunday</h2>
+          </div>
+          <div id="logoicon">
+             <a href="https://www.facebook.com/deccannews/"><i class="fa-brands fa-facebook-f"></i></a>
+             <a href="https://twitter.com/DeccanChronicle"><i class="fa-brands fa-twitter"></i></a>
+             <a href="https://www.instagram.com/deccanchronicle_official/"><i class="fa-brands fa-instagram-square"></i></a>
+             <a href="https://www.deccanchronicle.com/download-deccan-chronicle-app"><img src="https://www.deccanchronicle.com/images/app_store_iconWhite.png" alt=""></a>
+          </div>
+       </div>
+       <div id="box2">
+          <div id="box2logo">
+             <i class="fa-solid fa-square-check"></i>
+          </div>
+          <h2>Auto Refresh</h2>
+          <h2>| Corporate Insolvency Resolution Process</h2>
+       </div>
+    </div>
+    <div id="sidebar">
+       <div id="slider" onclick="show()">
+          <span></span>
+          <span></span>
+          <span></span>
+       </div>
+       <div id="sections">
+  
+          <ul id="right-section">
+             <div id="pagelogo">
+                <img src="https://d2u6vujtbrga6l.cloudfront.net/images/logo.png" alt="">
+             </div>
+             <li id="close-btn">
+                <img
+                   src="https://e7.pngegg.com/pngimages/1023/763/png-clipart-arrow-font-awesome-computer-icons-back-to-back-angle-logo.png"
+                   alt="">
+             </li>
+             <div id="icons">
+                <i class="fa-solid fa-house-chimney"></i>
+                <i class="fa-solid fa-bell"></i>
+                <h4>Prayers</h4>
+             </div>
+  
+             <div id="list-bar">
+                <h2>Nation</h2>
+                <div id="nation">
+                   <div>
+                      <i class="fa-solid fa-angles-right"></i>
+                   </div>
+                   <div>
+                      <p>Crime</p>
+                   </div>
+                   <div>
+                      <i class="fa-solid fa-angles-right"></i>
+                   </div>
+                   <div>
+                      <p>Current Affairs</p>
+                   </div>
+                   <div>
+                      <i class="fa-solid fa-angles-right"></i>
+                   </div>
+                   <div>
+                      <p>Politics</p>
+                   </div>
+                   <div>
+                      <i class="fa-solid fa-angles-right"></i>
+                   </div>
+                   <div>
+                      <p>In Other News</p>
+                   </div>
+                </div>
+                <!-- South -->
+                <h2>South</h2>
+                <div id="south">
+                   <div>
+                      <i class="fa-solid fa-angles-right"></i>
+                   </div>
+                   <div>
+                      <p>Telangana</p>
+                   </div>
+                   <div>
+                      <i class="fa-solid fa-angles-right"></i>
+                   </div>
+                   <div>
+                      <p>Andhra Pradesh</p>
+                   </div>
+                   <div>
+                      <i class="fa-solid fa-angles-right"></i>
+                   </div>
+                   <div>
+                      <p>Tamil Nadu</p>
+                   </div>
+                   <div>
+                      <i class="fa-solid fa-angles-right"></i>
+                   </div>
+                   <div>
+                      <p>Karnataka</p>
+                   </div>
+                   <div>
+                      <i class="fa-solid fa-angles-right"></i>
+                   </div>
+                   <div>
+                      <p>Kerala</p>
+                   </div>
+                </div>
+                <!-- world -->
+                <h2>World</h2>
+                <div id="world">
+                   <div>
+                      <i class="fa-solid fa-angles-right"></i>
+                   </div>
+                   <div>
+                      <p>Australia and New Zealand</p>
+                   </div>
+                   <div>
+                      <i class="fa-solid fa-angles-right"></i>
+                   </div>
+                   <div>
+                      <p>Neighbours</p>
+                   </div>
+                   <div>
+                      <i class="fa-solid fa-angles-right"></i>
+                   </div>
+                   <div>
+                      <p>Asia</p>
+                   </div>
+                   <div>
+                      <i class="fa-solid fa-angles-right"></i>
+                   </div>
+                   <div>
+                      <p>Africa</p>
+                   </div>
+                   <div>
+                      <i class="fa-solid fa-angles-right"></i>
+                   </div>
+                   <div>
+                      <p>America</p>
+                   </div>
+                   <div>
+                      <i class="fa-solid fa-angles-right"></i>
+                   </div>
+                   <div>
+                      <p>Europe</p>
+                   </div>
+                   <div>
+                      <i class="fa-solid fa-angles-right"></i>
+                   </div>
+                   <div>
+                      <p>Middle East</p>
+                   </div>
+                </div>
+                <!-- Entertainment -->
+                <h2>Entertainment</h2>
+                <div id="entertainment">
+                   <div>
+                      <i class="fa-solid fa-angles-right"></i>
+                   </div>
+                   <div>
+                      <p>Theatre</p>
+                   </div>
+                   <div>
+                      <i class="fa-solid fa-angles-right"></i>
+                   </div>
+                   <div>
+                      <p>Music</p>
+                   </div>
+                   <div>
+                      <i class="fa-solid fa-angles-right"></i>
+                   </div>
+                   <div>
+                      <p>Bollywood</p>
+                   </div>
+                   <div>
+                      <i class="fa-solid fa-angles-right"></i>
+                   </div>
+                   <div>
+                      <p>Kollybood</p>
+                   </div>
+                   <div>
+                      <i class="fa-solid fa-angles-right"></i>
+                   </div>
+                   <div>
+                      <p>Sadalwood</p>
+                   </div>
+                   <div>
+                      <i class="fa-solid fa-angles-right"></i>
+                   </div>
+                   <div>
+                      <p>Tollywood</p>
+                   </div>
+                   <div>
+                      <i class="fa-solid fa-angles-right"></i>
+                   </div>
+                   <div>
+                      <p>Television</p>
+                   </div>
+                   <div>
+                      <i class="fa-solid fa-angles-right"></i>
+                   </div>
+                   <div>
+                      <p>Movie Reviews</p>
+                   </div>
+                   <div>
+                      <i class="fa-solid fa-angles-right"></i>
+                   </div>
+                   <div>
+                      <p>Mollywood</p>
+                   </div>
+                   <div>
+                      <i class="fa-solid fa-angles-right"></i>
+                   </div>
+                   <div>
+                      <p>Hollywood</p>
+                   </div>
+                </div>
+                <!-- Jobs & Education -->
+  
+                <h2>Jobs & Education</h2>
+  
+                <!-- Sports -->
+                <h2>Sports</h2>
+                <div id="sports">
+                   <div>
+                      <i class="fa-solid fa-angles-right"></i>
+                   </div>
+                   <div>
+                      <p>Badminton</p>
+                   </div>
+                   <div>
+                      <i class="fa-solid fa-angles-right"></i>
+                   </div>
+                   <div>
+                      <p>Cricket</p>
+                   </div>
+                   <div>
+                      <i class="fa-solid fa-angles-right"></i>
+                   </div>
+                   <div>
+                      <p>Football</p>
+                   </div>
+                   <div>
+                      <i class="fa-solid fa-angles-right"></i>
+                   </div>
+                   <div>
+                      <p>Tennis</p>
+                   </div>
+                   <div>
+                      <i class="fa-solid fa-angles-right"></i>
+                   </div>
+                   <div>
+                      <p>In Other News</p>
+                   </div>
+                </div>
+                <!-- Technology -->
+                <h2>Technology</h2>
+                <div id="technology">
+                   <div>
+                      <i class="fa-solid fa-angles-right"></i>
+                   </div>
+                   <div>
+                      <p>Gadgets</p>
+                   </div>
+                   <div>
+                      <i class="fa-solid fa-angles-right"></i>
+                   </div>
+                   <div>
+                      <p>In Other News</p>
+                   </div>
+                   <div>
+                      <i class="fa-solid fa-angles-right"></i>
+                   </div>
+                   <div>
+                      <p>Mobiles and Tabs</p>
+                   </div>
+                </div>
+  
+                <!-- Lifestyle -->
+  
+                <h2>Lifestyle</h2>
+                <div id="lifestyle">
+                   <div>
+                      <i class="fa-solid fa-angles-right"></i>
+                   </div>
+                   <div>
+                      <p>Viral and Trending</p>
+                   </div>
+                   <div>
+                      <i class="fa-solid fa-angles-right"></i>
+                   </div>
+                   <div>
+                      <p>Health and Wellbeing</p>
+                   </div>
+                   <div>
+                      <i class="fa-solid fa-angles-right"></i>
+                   </div>
+                   <div>
+                      <p>Sex and Relationship</p>
+                   </div>
+                   <div>
+                      <i class="fa-solid fa-angles-right"></i>
+                   </div>
+                   <div>
+                      <p>Fashion and Beauty</p>
+                   </div>
+                   <div>
+                      <i class="fa-solid fa-angles-right"></i>
+                   </div>
+                   <div>
+                      <p>Food and Recipes</p>
+                   </div>
+                   <div>
+                      <i class="fa-solid fa-angles-right"></i>
+                   </div>
+                   <div>
+                      <p>Travel</p>
+                   </div>
+                   <div>
+                      <i class="fa-solid fa-angles-right"></i>
+                   </div>
+                   <div>
+                      <p>Book and Art</p>
+                   </div>
+                   <div>
+                      <i class="fa-solid fa-angles-right"></i>
+                   </div>
+                   <div>
+                      <p>Environment</p>
+                   </div>
+                   <div>
+                      <i class="fa-solid fa-angles-right"></i>
+                   </div>
+                   <div>
+                      <p>Culture and Society</p>
+                   </div>
+                </div>
+  
+                <!-- Gallery -->
+                <h2>Gallery</h2>
+                <h2>Business</h2>
+                <h2>Opinion</h2>
+                <h2>Sunday Chronicle</h2>
+                <h2>Featured</h2>
+                <h2>Hyderabad Chronicle</h2>
+                <h2>Science</h2>
+                <h2>Editor's Picks</h2>
+                <h2>Just In</h2>
+                <h2>Astroguide</h2>
+             </div>
+             <li>
+                <span>
+                   <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/800px-Facebook_Logo_%282019%29.png"
+                      alt="">
+                </span>
+                <span>
+                   <img
+                      src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png"
+                      alt="">
+                </span>
+                <span>
+                   <img
+                      src="https://icon-library.com/images/instagram-circle-icon-png/instagram-circle-icon-png-4.jpg"
+                      alt="">
+                </span>
+             </li>
+  
+          </ul>
+  
+       </div>
+    </div>
+    </div>
+    
     <div id="nav">
       
     </div>
     <div id="main">
 
 
-    <div id="nation">
+    <div id="nation1">
 
 
     </div>
@@ -103,14 +488,41 @@ height: 100%;
        
     </div>
 </div>
+
+<div id="Foot">
+
+
+</div>
 </body>
 </html>
-<script src="../demo/Scripts/entertainment.js" type="module"></script>
+<script>
+  function show() {
+     document.getElementById('sidebar').classList.toggle('active')
 
+  }
+
+  document.getElementById('close-btn').addEventListener('click', close);
+
+  function close() {
+
+     document.getElementById('sidebar').classList.remove('active')
+  }
+
+
+  document.getElementById('search-icon').addEventListener('click', searchSlide);
+  function searchSlide() {
+
+     document.getElementById('search-bar').classList.toggle('active')
+  }
+
+
+</script>
+
+<script src="./Script/xxx.js" type="module"></script>
 
 <script>
 
- const url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=9252738d55da4b0fbb83499ac7299865`
+ const url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=c689f4b80be94667af482d9e0e68ac99`
  data()
  async function data(){
 
@@ -130,14 +542,14 @@ height: 100%;
  img.src = elem.urlToImage
 img.setAttribute("id","yoyo")
 
- let title = document.createElement("h2")
+ let title = document.createElement("h3")
  title.innerText= elem.title
 
  let des = document.createElement("p")
  des.innerText = elem.description
 
  div.append(img,title,des)
- document.querySelector("#nation").append(div)
+ document.querySelector("#nation1").append(div)
 
 })
 
@@ -145,8 +557,7 @@ img.setAttribute("id","yoyo")
  };
 
 
- const uri=`https://newsapi.org/v2/everything?q=india&apiKey=9252738d55da4b0fbb83499ac7299865
-`
+ const uri=`https://newsapi.org/v2/everything?q=india&apiKey=c689f4b80be94667af482d9e0e68ac99`
  data2()
  async function data2(){
  
@@ -182,7 +593,7 @@ img.setAttribute("id","yoyo")
  }
 
 
-//  const url2 = `https://newsapi.org/v2/top-headlines?country=in&category=general&apiKey=9252738d55da4b0fbb83499ac7299865`
+//  const url2 = `https://newsapi.org/v2/top-headlines?country=in&category=general&apiKey=c689f4b80be94667af482d9e0e68ac99`
 
  
 //  data3()
@@ -210,7 +621,7 @@ img.setAttribute("id","yoyo")
 //  des.innerText = elem.description
 
 //  div.append(img,title,des)
-//  document.querySelector("#nation").append(div)
+//  document.querySelector("#nation1").append(div)
 
 // })
 
@@ -218,7 +629,7 @@ img.setAttribute("id","yoyo")
 //  };
 
 
- const url3 =  `https://newsapi.org/v2/top-headlines?country=in&category=science&apiKey=9252738d55da4b0fbb83499ac7299865`
+ const url3 =  `https://newsapi.org/v2/top-headlines?country=in&category=science&apiKey=c689f4b80be94667af482d9e0e68ac99`
 
  data4()
  async function data4(){
@@ -238,14 +649,14 @@ img.setAttribute("id","yoyo")
  img.src = elem.urlToImage
 img.setAttribute("id","yoyo")
 
- let title = document.createElement("h1")
+ let title = document.createElement("h3")
  title.innerText= elem.title
 
  let des = document.createElement("p")
  des.innerText = elem.description
 
  div.append(img,title,des)
- document.querySelector("#nation").append(div)
+ document.querySelector("#nation1").append(div)
 
 })
 

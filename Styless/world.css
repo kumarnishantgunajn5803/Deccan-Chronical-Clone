@@ -1,0 +1,130 @@
+
+body{
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    height: auto;
+    /* border: solid 2px yellow; */
+}
+#icon{
+    display: flex;
+}
+#iconfirst{
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 7px;
+    cursor: pointer;
+}
+#iconsecond {
+    margin-left: 7px;
+    margin-top: -8px;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+   /* World news css */
+
+#worldNewshead{
+    margin: auto;
+    /* width: 90%; */
+    /* height: 900px; */
+    /* border: solid 1px red; */
+   display: flex;
+}
+
+#worldNewshead>div{
+    display: grid;
+    margin: auto;
+    margin-top: 1px;
+    /* border: solid 1px green; */
+    /* height: 1200px; */
+    /* width: 30%; */
+}
+#worldfirst{
+    width: 40%;
+    height: auto;
+    align-items: center;
+}
+#worldfirst>div{
+    display: grid;
+    width: 100%;
+    margin-top: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-bottom: solid 1px;
+    border-color: grey;
+    cursor: pointer;
+}
+.worldfirstnews img{
+    width: 100%;
+    height: 300px;
+}
+.worldfirstnews h2{
+    /* text-align: center; */
+    font-size: 23px;
+    font-weight: bold;
+    padding: 15px;
+}
+.worldfirstnews p{
+    /* text-align: center; */
+    font-size: 19px;
+    margin-top: -5px;
+    padding: 10px;
+}
+#worldsecond{
+    width: 29%;
+    height: auto;
+    display: flex;
+}
+#worldsecond>div{
+    /* width: 28%; */
+    display: flex;
+    margin-top: 3px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-bottom: solid 1px;
+    border-color: grey;
+    cursor: pointer;
+}
+.worldsecondnews img{
+    width: 120px;
+    height: 100px;
+}
+.worldsecondnews p{
+    /* text-align: center; */
+    font-size: 16px;
+    margin-left: 15px;
+}
+#mostpopular{
+    width: 29%;
+    display: flex;
+}
+#ads img{
+    width: 100%;
+    height: auto;
+}
+#mostpopular>div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-top: 5px;
+    border-bottom: solid 1px;
+    border-color: grey;
+    cursor: pointer;
+}
+.mostpopularnews img{
+    width: 180px;
+    height: 100px;
+    margin-right: 4px;
+}
+.mostpopularnews h2{
+    font-size: 16px;
+    /* margin-right: 4px; */
+    padding: 5px;
+}
+
+h1{
+    margin-left: 15px;
+    text-decoration: underline red;
+   text-underline-offset: 10px;
+    
+}
