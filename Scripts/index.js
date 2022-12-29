@@ -28,7 +28,7 @@ getData();
 
 function append(data,container){
     
-  for(let i =4;i<7;i++){
+  for(let i =3;i<6;i++){
     let div =  document.createElement('div');
     div.setAttribute('class','top_stories_big_cards');
     div.addEventListener("click", function () {
